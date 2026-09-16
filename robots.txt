@@ -1,4 +1,2 @@
 User-agent: *
 Allow: /
-
-Sitemap: https://can-lee.github.io/deformmaster-web/sitemap.xml

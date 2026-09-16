@@ -1,0 +1,262 @@
+{
+  "cases": [
+    {
+      "id": "07_plush_turtle",
+      "label": "Plush turtle",
+      "methods": [
+        {
+          "id": "deformsmith",
+          "label": "DeformSmith (ours)",
+          "views": [
+            {
+              "src": "assets/videos/07_plush_turtle-deformsmith-0.mp4",
+              "poster": "assets/images/07_plush_turtle-deformsmith-0.jpg"
+            },
+            {
+              "src": "assets/videos/07_plush_turtle-deformsmith-1.mp4",
+              "poster": "assets/images/07_plush_turtle-deformsmith-1.jpg"
+            }
+          ]
+        },
+        {
+          "id": "physgen3d",
+          "label": "PhysGen3D",
+          "views": [
+            {
+              "src": "assets/videos/07_plush_turtle-physgen3d-0.mp4",
+              "poster": "assets/images/07_plush_turtle-physgen3d-0.jpg"
+            },
+            {
+              "src": "assets/videos/07_plush_turtle-physgen3d-1.mp4",
+              "poster": "assets/images/07_plush_turtle-physgen3d-1.jpg"
+            }
+          ]
+        },
+        {
+          "id": "physgm",
+          "label": "PhysGM",
+          "views": [
+            {
+              "src": "assets/videos/07_plush_turtle-physgm-0.mp4",
+              "poster": "assets/images/07_plush_turtle-physgm-0.jpg"
+            },
+            {
+              "src": "assets/videos/07_plush_turtle-physgm-1.mp4",
+              "poster": "assets/images/07_plush_turtle-physgm-1.jpg"
+            }
+          ]
+        },
+        {
+          "id": "physx_omni",
+          "label": "PhysX-Omni",
+          "views": [
+            {
+              "src": "assets/videos/07_plush_turtle-physx_omni-0.mp4",
+              "poster": "assets/images/07_plush_turtle-physx_omni-0.jpg"
+            },
+            {
+              "src": "assets/videos/07_plush_turtle-physx_omni-1.mp4",
+              "poster": "assets/images/07_plush_turtle-physx_omni-1.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "05_plush_whale",
+      "label": "Plush whale",
+      "methods": [
+        {
+          "id": "deformsmith",
+          "label": "DeformSmith (ours)",
+          "views": [
+            {
+              "src": "assets/videos/05_plush_whale-deformsmith-0.mp4",
+              "poster": "assets/images/05_plush_whale-deformsmith-0.jpg"
+            },
+            {
+              "src": "assets/videos/05_plush_whale-deformsmith-1.mp4",
+              "poster": "assets/images/05_plush_whale-deformsmith-1.jpg"
+            }
+          ]
+        },
+        {
+          "id": "physgen3d",
+          "label": "PhysGen3D",
+          "views": [
+            {
+              "src": "assets/videos/05_plush_whale-physgen3d-0.mp4",
+              "poster": "assets/images/05_plush_whale-physgen3d-0.jpg"
+            },
+            {
+              "src": "assets/videos/05_plush_whale-physgen3d-1.mp4",
+              "poster": "assets/images/05_plush_whale-physgen3d-1.jpg"
+            }
+          ]
+        },
+        {
+          "id": "physgm",
+          "label": "PhysGM",
+          "views": [
+            {
+              "src": "assets/videos/05_plush_whale-physgm-0.mp4",
+              "poster": "assets/images/05_plush_whale-physgm-0.jpg"
+            },
+            {
+              "src": "assets/videos/05_plush_whale-physgm-1.mp4",
+              "poster": "assets/images/05_plush_whale-physgm-1.jpg"
+            }
+          ]
+        },
+        {
+          "id": "physx_omni",
+          "label": "PhysX-Omni",
+          "views": [
+            {
+              "src": "assets/videos/05_plush_whale-physx_omni-0.mp4",
+              "poster": "assets/images/05_plush_whale-physx_omni-0.jpg"
+            },
+            {
+              "src": "assets/videos/05_plush_whale-physx_omni-1.mp4",
+              "poster": "assets/images/05_plush_whale-physx_omni-1.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "06_plush_seal",
+      "label": "Plush seal",
+      "methods": [
+        {
+          "id": "deformsmith",
+          "label": "DeformSmith (ours)",
+          "views": [
+            {
+              "src": "assets/videos/06_plush_seal-deformsmith-0.mp4",
+              "poster": "assets/images/06_plush_seal-deformsmith-0.jpg"
+            },
+            {
+              "src": "assets/videos/06_plush_seal-deformsmith-1.mp4",
+              "poster": "assets/images/06_plush_seal-deformsmith-1.jpg"
+            }
+          ]
+        },
+        {
+          "id": "physgen3d",
+          "label": "PhysGen3D",
+          "views": [
+            {
+              "src": "assets/videos/06_plush_seal-physgen3d-0.mp4",
+              "poster": "assets/images/06_plush_seal-physgen3d-0.jpg"
+            },
+            {
+              "src": "assets/videos/06_plush_seal-physgen3d-1.mp4",
+              "poster": "assets/images/06_plush_seal-physgen3d-1.jpg"
+            }
+          ]
+        },
+        {
+          "id": "physgm",
+          "label": "PhysGM",
+          "views": [
+            {
+              "src": "assets/videos/06_plush_seal-physgm-0.mp4",
+              "poster": "assets/images/06_plush_seal-physgm-0.jpg"
+            },
+            {
+              "src": "assets/videos/06_plush_seal-physgm-1.mp4",
+              "poster": "assets/images/06_plush_seal-physgm-1.jpg"
+            }
+          ]
+        },
+        {
+          "id": "physx_omni",
+          "label": "PhysX-Omni",
+          "views": [
+            {
+              "src": "assets/videos/06_plush_seal-physx_omni-0.mp4",
+              "poster": "assets/images/06_plush_seal-physx_omni-0.jpg"
+            },
+            {
+              "src": "assets/videos/06_plush_seal-physx_omni-1.mp4",
+              "poster": "assets/images/06_plush_seal-physx_omni-1.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "22_rubber_rugby_ball",
+      "label": "Rubber rugby ball",
+      "methods": [
+        {
+          "id": "deformsmith",
+          "label": "DeformSmith (ours)",
+          "views": [
+            {
+              "src": "assets/videos/22_rubber_rugby_ball-deformsmith-0.mp4",
+              "poster": "assets/images/22_rubber_rugby_ball-deformsmith-0.jpg"
+            },
+            {
+              "src": "assets/videos/22_rubber_rugby_ball-deformsmith-1.mp4",
+              "poster": "assets/images/22_rubber_rugby_ball-deformsmith-1.jpg"
+            }
+          ]
+        },
+        {
+          "id": "physgen3d",
+          "label": "PhysGen3D",
+          "views": [
+            {
+              "src": "assets/videos/22_rubber_rugby_ball-physgen3d-0.mp4",
+              "poster": "assets/images/22_rubber_rugby_ball-physgen3d-0.jpg"
+            },
+            {
+              "src": "assets/videos/22_rubber_rugby_ball-physgen3d-1.mp4",
+              "poster": "assets/images/22_rubber_rugby_ball-physgen3d-1.jpg"
+            }
+          ]
+        },
+        {
+          "id": "physgm",
+          "label": "PhysGM",
+          "views": [
+            {
+              "src": "assets/videos/22_rubber_rugby_ball-physgm-0.mp4",
+              "poster": "assets/images/22_rubber_rugby_ball-physgm-0.jpg"
+            },
+            {
+              "src": "assets/videos/22_rubber_rugby_ball-physgm-1.mp4",
+              "poster": "assets/images/22_rubber_rugby_ball-physgm-1.jpg"
+            }
+          ]
+        },
+        {
+          "id": "physx_omni",
+          "label": "PhysX-Omni",
+          "views": [
+            {
+              "src": "assets/videos/22_rubber_rugby_ball-physx_omni-0.mp4",
+              "poster": "assets/images/22_rubber_rugby_ball-physx_omni-0.jpg"
+            },
+            {
+              "src": "assets/videos/22_rubber_rugby_ball-physx_omni-1.mp4",
+              "poster": "assets/images/22_rubber_rugby_ball-physx_omni-1.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "robot": [
+    {
+      "src": "assets/videos/robot-scene.mp4",
+      "poster": "assets/images/robot-scene.jpg"
+    },
+    {
+      "src": "assets/videos/robot-closeup.mp4",
+      "poster": "assets/images/robot-closeup.jpg"
+    }
+  ]
+}
