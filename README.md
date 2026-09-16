@@ -22,9 +22,9 @@ The page does not publish tentative ratings, hypothetical ablation targets, or s
 
 ## Publish
 
-The independent repository is CAN-Lee/deformsmith-web. In Settings → Pages, set Source to GitHub Actions. Pushes to main then deploy the website through .github/workflows/pages.yml. The workflow publishes only the website and its required media.
+The independent repository is CAN-Lee/DeformSmith_web. In Settings → Pages, set Source to GitHub Actions. Pushes to main then deploy the website through .github/workflows/pages.yml. The workflow publishes only the website and its required media.
 
-Expected URL: https://can-lee.github.io/deformsmith-web/
+Expected URL: https://can-lee.github.io/DeformSmith_web/
 
 This checkout retains the original template remote as `template` for provenance; `origin` points to the independent DeformSmith repository.
 
