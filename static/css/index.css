@@ -5,3 +5,5 @@
 .hero { padding-bottom: 24px; }
 #interaction { padding-top: 24px; }
 #interaction .section-intro { max-width: none; }
+
+.arxiv-link{gap:8px}.arxiv-link svg{display:block;flex-shrink:0}
