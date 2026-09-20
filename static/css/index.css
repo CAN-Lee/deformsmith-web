@@ -7,3 +7,5 @@
 #interaction .section-intro { max-width: none; }
 
 .arxiv-link{gap:8px}.arxiv-link svg{display:block;flex-shrink:0}
+
+.playback{flex-wrap:wrap}.playback-note{font-size:11px;line-height:1.5;color:var(--muted);margin:0;padding:10px 12px;border-top:1px solid var(--line)}

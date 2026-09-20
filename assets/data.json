@@ -16,7 +16,23 @@
               "src": "assets/videos/07_plush_turtle-deformsmith-1.mp4",
               "poster": "assets/images/07_plush_turtle-deformsmith-1.jpg"
             }
-          ]
+          ],
+          "detail": {
+            "views": [
+              {
+                "src": "assets/videos/07_plush_turtle-deformsmith-slow-0.mp4",
+                "poster": "assets/images/07_plush_turtle-deformsmith-slow-0.jpg"
+              },
+              {
+                "src": "assets/videos/07_plush_turtle-deformsmith-slow-1.mp4",
+                "poster": "assets/images/07_plush_turtle-deformsmith-slow-1.jpg"
+              }
+            ],
+            "playback_speed": 0.0625,
+            "clearance_m": 0.04,
+            "simulation_duration_s": 0.3125,
+            "video_duration_s": 5
+          }
         },
         {
           "id": "physgen3d",
@@ -78,7 +94,23 @@
               "src": "assets/videos/05_plush_whale-deformsmith-1.mp4",
               "poster": "assets/images/05_plush_whale-deformsmith-1.jpg"
             }
-          ]
+          ],
+          "detail": {
+            "views": [
+              {
+                "src": "assets/videos/05_plush_whale-deformsmith-slow-0.mp4",
+                "poster": "assets/images/05_plush_whale-deformsmith-slow-0.jpg"
+              },
+              {
+                "src": "assets/videos/05_plush_whale-deformsmith-slow-1.mp4",
+                "poster": "assets/images/05_plush_whale-deformsmith-slow-1.jpg"
+              }
+            ],
+            "playback_speed": 0.0625,
+            "clearance_m": 0.04,
+            "simulation_duration_s": 0.3125,
+            "video_duration_s": 5
+          }
         },
         {
           "id": "physgen3d",
@@ -140,7 +172,23 @@
               "src": "assets/videos/06_plush_seal-deformsmith-1.mp4",
               "poster": "assets/images/06_plush_seal-deformsmith-1.jpg"
             }
-          ]
+          ],
+          "detail": {
+            "views": [
+              {
+                "src": "assets/videos/06_plush_seal-deformsmith-slow-0.mp4",
+                "poster": "assets/images/06_plush_seal-deformsmith-slow-0.jpg"
+              },
+              {
+                "src": "assets/videos/06_plush_seal-deformsmith-slow-1.mp4",
+                "poster": "assets/images/06_plush_seal-deformsmith-slow-1.jpg"
+              }
+            ],
+            "playback_speed": 0.0625,
+            "clearance_m": 0.04,
+            "simulation_duration_s": 0.3125,
+            "video_duration_s": 5
+          }
         },
         {
           "id": "physgen3d",
@@ -202,7 +250,23 @@
               "src": "assets/videos/22_rubber_rugby_ball-deformsmith-1.mp4",
               "poster": "assets/images/22_rubber_rugby_ball-deformsmith-1.jpg"
             }
-          ]
+          ],
+          "detail": {
+            "views": [
+              {
+                "src": "assets/videos/22_rubber_rugby_ball-deformsmith-slow-0.mp4",
+                "poster": "assets/images/22_rubber_rugby_ball-deformsmith-slow-0.jpg"
+              },
+              {
+                "src": "assets/videos/22_rubber_rugby_ball-deformsmith-slow-1.mp4",
+                "poster": "assets/images/22_rubber_rugby_ball-deformsmith-slow-1.jpg"
+              }
+            ],
+            "playback_speed": 0.0625,
+            "clearance_m": 0.04,
+            "simulation_duration_s": 0.3125,
+            "video_duration_s": 5
+          }
         },
         {
           "id": "physgen3d",
