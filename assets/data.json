@@ -165,23 +165,23 @@
           "label": "DeformSmith (ours)",
           "views": [
             {
-              "src": "assets/videos/06_plush_seal-deformsmith-0.mp4",
-              "poster": "assets/images/06_plush_seal-deformsmith-0.jpg"
+              "src": "assets/videos/06_plush_seal-deformsmith-level-0.mp4",
+              "poster": "assets/images/06_plush_seal-deformsmith-level-0.jpg"
             },
             {
-              "src": "assets/videos/06_plush_seal-deformsmith-1.mp4",
-              "poster": "assets/images/06_plush_seal-deformsmith-1.jpg"
+              "src": "assets/videos/06_plush_seal-deformsmith-level-1.mp4",
+              "poster": "assets/images/06_plush_seal-deformsmith-level-1.jpg"
             }
           ],
           "detail": {
             "views": [
               {
-                "src": "assets/videos/06_plush_seal-deformsmith-slow-0.mp4",
-                "poster": "assets/images/06_plush_seal-deformsmith-slow-0.jpg"
+                "src": "assets/videos/06_plush_seal-deformsmith-slow-level-0.mp4",
+                "poster": "assets/images/06_plush_seal-deformsmith-slow-level-0.jpg"
               },
               {
-                "src": "assets/videos/06_plush_seal-deformsmith-slow-1.mp4",
-                "poster": "assets/images/06_plush_seal-deformsmith-slow-1.jpg"
+                "src": "assets/videos/06_plush_seal-deformsmith-slow-level-1.mp4",
+                "poster": "assets/images/06_plush_seal-deformsmith-slow-level-1.jpg"
               }
             ],
             "playback_speed": 0.0625,
@@ -243,23 +243,23 @@
           "label": "DeformSmith (ours)",
           "views": [
             {
-              "src": "assets/videos/22_rubber_rugby_ball-deformsmith-0.mp4",
-              "poster": "assets/images/22_rubber_rugby_ball-deformsmith-0.jpg"
+              "src": "assets/videos/22_rubber_rugby_ball-deformsmith-level-0.mp4",
+              "poster": "assets/images/22_rubber_rugby_ball-deformsmith-level-0.jpg"
             },
             {
-              "src": "assets/videos/22_rubber_rugby_ball-deformsmith-1.mp4",
-              "poster": "assets/images/22_rubber_rugby_ball-deformsmith-1.jpg"
+              "src": "assets/videos/22_rubber_rugby_ball-deformsmith-level-1.mp4",
+              "poster": "assets/images/22_rubber_rugby_ball-deformsmith-level-1.jpg"
             }
           ],
           "detail": {
             "views": [
               {
-                "src": "assets/videos/22_rubber_rugby_ball-deformsmith-slow-0.mp4",
-                "poster": "assets/images/22_rubber_rugby_ball-deformsmith-slow-0.jpg"
+                "src": "assets/videos/22_rubber_rugby_ball-deformsmith-slow-level-0.mp4",
+                "poster": "assets/images/22_rubber_rugby_ball-deformsmith-slow-level-0.jpg"
               },
               {
-                "src": "assets/videos/22_rubber_rugby_ball-deformsmith-slow-1.mp4",
-                "poster": "assets/images/22_rubber_rugby_ball-deformsmith-slow-1.jpg"
+                "src": "assets/videos/22_rubber_rugby_ball-deformsmith-slow-level-1.mp4",
+                "poster": "assets/images/22_rubber_rugby_ball-deformsmith-slow-level-1.jpg"
               }
             ],
             "playback_speed": 0.0625,
