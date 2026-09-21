@@ -13,7 +13,7 @@
 .github-link{gap:8px}.github-link svg{display:block;flex-shrink:0}
 
 /* Robot inputs and paired replays share one case selection. */
-.robot-grid{grid-template-columns:minmax(0,.78fr) repeat(2,minmax(0,1fr));gap:18px;align-items:stretch}
+.robot-grid{grid-template-columns:minmax(0,.45fr) repeat(2,minmax(0,1fr));gap:18px;align-items:stretch}
 .robot-grid>article,.robot-grid>figure{min-width:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:white}
 .robot-grid h3{font-size:14px;padding:12px 16px;margin:0;border-bottom:1px solid var(--line)}
 .robot-grid video{aspect-ratio:1;object-fit:contain;background:white;border-radius:0}
