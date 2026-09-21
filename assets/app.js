@@ -18,11 +18,11 @@
 })();
 
 (async () => {
- const grid=document.querySelector('#robot-grid'),tabs=document.querySelector('#robot-tabs'),status=document.querySelector('#robot-status'),play=document.querySelector('#robot-play'),reset=document.querySelector('#robot-reset'),sequence=document.querySelector('#robot-sequence');
+ const grid=document.querySelector('#robot-grid'),tabs=document.querySelector('#robot-tabs'),status=document.querySelector('#robot-status'),sequence=document.querySelector('#robot-sequence');
  if(!grid)return;
  let token=0,selected=0,data;
  const videos=()=>[...grid.querySelectorAll('video')];
- function pause(){token++;videos().forEach(v=>v.pause());play.textContent='Play both';}
+ function pause(){token++;videos().forEach(v=>v.pause());}
  function render(){
   pause();const item=data.cases[selected];grid.replaceChildren();
   tabs.querySelectorAll('button').forEach((b,i)=>b.setAttribute('aria-pressed',String(i===selected)));
@@ -32,20 +32,15 @@
   }else{const quote=document.createElement('blockquote');quote.textContent='“'+item.input.prompt+'”';content.append(quote)}
   input.append(heading,content);grid.append(input);
   item.views.forEach((media,i)=>{
-   const card=document.createElement('figure'),title=document.createElement('h3'),video=document.createElement('video'),caption=document.createElement('figcaption');title.textContent=i===0?'Scene':'Detail';video.src=media.src;video.poster=media.poster;video.controls=true;video.muted=true;video.playsInline=true;video.preload='metadata';video.setAttribute('aria-label',item.label+' — '+title.textContent);caption.textContent=i===0?'Robot and reconstructed scene':'Object deformation and gripper geometry';
-   video.addEventListener('error',()=>{status.textContent='A robot video could not load. Please reload the page.'});video.addEventListener('ended',()=>{if(videos().every(v=>v.ended||v.paused))play.textContent='Play both'});card.append(title,video,caption);grid.append(card);
+   const card=document.createElement('figure'),title=document.createElement('h3'),video=document.createElement('video'),caption=document.createElement('figcaption');title.textContent=i===0?'Scene':'Detail';video.src=media.src;video.poster=media.poster;video.controls=true;video.muted=true;video.defaultMuted=true;video.autoplay=true;video.loop=true;video.playsInline=true;video.preload='auto';video.setAttribute('aria-label',item.label+' — '+title.textContent);caption.textContent=i===0?'Robot and reconstructed scene':'Object deformation and gripper geometry';
+   video.addEventListener('error',()=>{status.textContent='A robot video could not load. Please reload the page.'});card.append(title,video,caption);grid.append(card);
   });
   sequence.hidden=!item.sequence;if(item.sequence)sequence.src=item.sequence;
   status.textContent=item.label+' · Original playback speed';
+  const current=token;Promise.allSettled(videos().map(v=>v.play())).then(results=>{if(current===token&&results.some(r=>r.status==='rejected'))status.textContent=item.label+' · Tap a video to play.'});
  }
- play.addEventListener('click',async()=>{
-  if(videos().some(v=>!v.paused&&!v.ended)){pause();return}
-  const current=++token,vs=videos();vs.forEach(v=>{v.currentTime=0});play.textContent='Pause both';const result=await Promise.allSettled(vs.map(v=>v.play()));if(current!==token)return;
-  if(result.some(r=>r.status==='rejected')){pause();status.textContent='Use the individual video controls to start playback.'}
- });
- reset.addEventListener('click',()=>{pause();videos().forEach(v=>{v.currentTime=0})});
  try{
-  const response=await fetch('assets/robots.json');if(!response.ok)throw Error('Robot media index unavailable');data=await response.json();
+  const response=await fetch('assets/robots.json', {cache:'no-cache'});if(!response.ok)throw Error('Robot media index unavailable');data=await response.json();tabs.replaceChildren();
   data.cases.forEach((item,i)=>{const button=document.createElement('button');button.type='button';button.className='case-tab';button.textContent=item.label;button.addEventListener('click',()=>{selected=i;render()});tabs.append(button)});render();
  }catch(e){status.textContent='Showing the original Teddy example. Additional robot examples could not load.'}
 })();
