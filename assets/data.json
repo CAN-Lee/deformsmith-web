@@ -176,12 +176,12 @@
           "detail": {
             "views": [
               {
-                "src": "assets/videos/06_plush_seal-deformsmith-slow-level-0.mp4",
-                "poster": "assets/images/06_plush_seal-deformsmith-slow-level-0.jpg"
+                "src": "assets/videos/06_plush_seal-deformsmith-slow-level-0.mp4?v=belly20260921",
+                "poster": "assets/images/06_plush_seal-deformsmith-slow-level-0.jpg?v=belly20260921"
               },
               {
-                "src": "assets/videos/06_plush_seal-deformsmith-slow-level-1.mp4",
-                "poster": "assets/images/06_plush_seal-deformsmith-slow-level-1.jpg"
+                "src": "assets/videos/06_plush_seal-deformsmith-slow-level-1.mp4?v=belly20260921",
+                "poster": "assets/images/06_plush_seal-deformsmith-slow-level-1.jpg?v=belly20260921"
               }
             ],
             "playback_speed": 0.0625,
