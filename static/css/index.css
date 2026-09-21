@@ -27,3 +27,13 @@
 @media(max-width:480px){.robot-grid{gap:10px}.robot-input-content img{width:120px;height:100px}.robot-grid h3{padding:10px 12px}.robot-grid figcaption{padding:10px;font-size:11px}}
 
 #robot-sequence[hidden]{display:none}
+
+/* Compact input line above the original pair of robot replays. */
+.robot-grid>.robot-input{border:0;border-radius:0;background:transparent!important;flex-direction:row;align-items:center;gap:8px}
+.robot-input h3{border:0;padding:0;font-size:12px;font-weight:500;white-space:nowrap;color:var(--muted)}
+.robot-input h3::after{content:":"}
+.robot-input-content{padding:0;gap:10px;flex:1;min-width:0}
+.robot-input-content blockquote,.robot-input-content .robot-target{font-size:13px;line-height:1.5;color:var(--muted)}
+.robot-target span{display:none}
+.robot-input-content img{width:64px;max-width:64px;height:44px;border-radius:3px}
+@media(max-width:480px){.robot-input-content img{width:54px;height:38px}.robot-input-content blockquote,.robot-input-content .robot-target{font-size:12px}}
