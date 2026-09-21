@@ -1,0 +1,80 @@
+{
+  "cases": [
+    {
+      "id": "teddy-text",
+      "label": "Teddy \u00b7 text",
+      "input": {
+        "kind": "text",
+        "prompt": "a soft brown teddy bear toy"
+      },
+      "views": [
+        {
+          "src": "assets/videos/robot-scene.mp4",
+          "poster": "assets/images/robot-scene.jpg"
+        },
+        {
+          "src": "assets/videos/robot-closeup.mp4",
+          "poster": "assets/images/robot-closeup.jpg"
+        }
+      ],
+      "sequence": "assets/images/robot-sequence.jpg"
+    },
+    {
+      "id": "06_teddy",
+      "label": "Teddy \u00b7 image",
+      "input": {
+        "kind": "image",
+        "prompt": "soft teddy bear plush toy",
+        "src": "assets/images/robot-06_teddy-input.jpg"
+      },
+      "views": [
+        {
+          "src": "assets/videos/robot-06_teddy-scene.mp4",
+          "poster": "assets/images/robot-06_teddy-scene.jpg"
+        },
+        {
+          "src": "assets/videos/robot-06_teddy-detail.mp4",
+          "poster": "assets/images/robot-06_teddy-detail.jpg"
+        }
+      ]
+    },
+    {
+      "id": "05_black_camera",
+      "label": "Black camera",
+      "input": {
+        "kind": "image",
+        "prompt": "black Pentax camera on the right",
+        "src": "assets/images/robot-05_black_camera-input.jpg"
+      },
+      "views": [
+        {
+          "src": "assets/videos/robot-05_black_camera-scene.mp4",
+          "poster": "assets/images/robot-05_black_camera-scene.jpg"
+        },
+        {
+          "src": "assets/videos/robot-05_black_camera-detail.mp4",
+          "poster": "assets/images/robot-05_black_camera-detail.jpg"
+        }
+      ]
+    },
+    {
+      "id": "07_white_plush",
+      "label": "White plush",
+      "input": {
+        "kind": "image",
+        "prompt": "white long-eared plush toy",
+        "src": "assets/images/robot-07_white_plush-input.jpg"
+      },
+      "views": [
+        {
+          "src": "assets/videos/robot-07_white_plush-scene.mp4",
+          "poster": "assets/images/robot-07_white_plush-scene.jpg"
+        },
+        {
+          "src": "assets/videos/robot-07_white_plush-detail.mp4",
+          "poster": "assets/images/robot-07_white_plush-detail.jpg"
+        }
+      ]
+    }
+  ]
+}
