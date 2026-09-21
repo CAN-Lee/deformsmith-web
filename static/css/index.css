@@ -37,3 +37,8 @@
 .robot-target span{display:none}
 .robot-input-content img{width:64px;max-width:64px;height:44px;border-radius:3px}
 @media(max-width:480px){.robot-input-content img{width:54px;height:38px}.robot-input-content blockquote,.robot-input-content .robot-target{font-size:12px}}
+
+/* Prompt is a standalone text line, outside the video cards. */
+.robot-prompt-row{display:flex;align-items:center;gap:8px;margin:0 0 14px;padding:0;border:0;background:none;font-size:13px;line-height:1.5;color:var(--muted)}
+.robot-prompt-row>span{white-space:nowrap}.robot-prompt-content{display:flex;align-items:center;gap:10px;min-width:0}
+.robot-prompt-content blockquote,.robot-prompt-content p{margin:0;font-size:13px;line-height:1.5;font-weight:400}.robot-prompt-content img{width:64px;height:44px;object-fit:contain}.robot-prompt-content .robot-target span{display:none}

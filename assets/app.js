@@ -26,11 +26,11 @@
  function render(){
   pause();const item=data.cases[selected];grid.replaceChildren();
   tabs.querySelectorAll('button').forEach((b,i)=>b.setAttribute('aria-pressed',String(i===selected)));
-  const input=document.createElement('article');input.className='robot-input';const heading=document.createElement('h3');heading.textContent=item.input.kind==='image'?'Image prompt':'Text prompt';const content=document.createElement('div');content.className='robot-input-content';
+  const input=document.querySelector('#robot-prompt');input.replaceChildren();const heading=document.createElement('span');heading.textContent=item.input.kind==='image'?'Image prompt:':'Text prompt:';const content=document.createElement('div');content.className='robot-prompt-content';
   if(item.input.kind==='image'){
    const img=document.createElement('img');img.src=item.input.src;img.alt='Original input image: '+item.input.prompt;const target=document.createElement('p');target.className='robot-target';const label=document.createElement('span');label.textContent='Target';target.append(label,document.createTextNode(item.input.prompt));content.append(img,target);
   }else{const quote=document.createElement('blockquote');quote.textContent='“'+item.input.prompt+'”';content.append(quote)}
-  input.append(heading,content);grid.append(input);
+  input.append(heading,content);
   item.views.forEach((media,i)=>{
    const card=document.createElement('figure'),title=document.createElement('h3'),video=document.createElement('video'),caption=document.createElement('figcaption');title.textContent=i===0?'Scene':'Detail';video.src=media.src;video.poster=media.poster;video.controls=true;video.muted=true;video.defaultMuted=true;video.autoplay=true;video.loop=true;video.playsInline=true;video.preload='auto';video.setAttribute('aria-label',item.label+' — '+title.textContent);caption.textContent=i===0?'Robot and reconstructed scene':'Object deformation and gripper geometry';
    video.addEventListener('error',()=>{status.textContent='A robot video could not load. Please reload the page.'});card.append(title,video,caption);grid.append(card);
