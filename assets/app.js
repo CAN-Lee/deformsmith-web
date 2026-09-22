@@ -18,7 +18,7 @@
 })();
 
 (async () => {
- const grid=document.querySelector('#robot-grid'),tabs=document.querySelector('#robot-tabs'),status=document.querySelector('#robot-status'),sequence=document.querySelector('#robot-sequence');
+ const grid=document.querySelector('#robot-grid'),tabs=document.querySelector('#robot-tabs'),status=document.querySelector('#robot-status');
  if(!grid)return;
  let token=0,selected=0,data;
  const videos=()=>[...grid.querySelectorAll('video')];
@@ -35,7 +35,6 @@
    const card=document.createElement('figure'),title=document.createElement('h3'),video=document.createElement('video'),caption=document.createElement('figcaption');title.textContent=i===0?'Scene':'Detail';video.src=media.src;video.poster=media.poster;video.controls=true;video.muted=true;video.defaultMuted=true;video.autoplay=true;video.loop=true;video.playsInline=true;video.preload='auto';video.setAttribute('aria-label',item.label+' — '+title.textContent);caption.textContent=i===0?'Robot and reconstructed scene':'Object deformation and gripper geometry';
    video.addEventListener('error',()=>{status.textContent='A robot video could not load. Please reload the page.'});card.append(title,video,caption);grid.append(card);
   });
-  sequence.hidden=!item.sequence;if(item.sequence)sequence.src=item.sequence;
   status.textContent=item.label+' · Original playback speed';
   const current=token;Promise.allSettled(videos().map(v=>v.play())).then(results=>{if(current===token&&results.some(r=>r.status==='rejected'))status.textContent=item.label+' · Tap a video to play.'});
  }

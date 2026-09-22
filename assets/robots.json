@@ -16,8 +16,7 @@
           "src": "assets/videos/robot-closeup.mp4",
           "poster": "assets/images/robot-closeup.jpg"
         }
-      ],
-      "sequence": "assets/images/robot-sequence.jpg"
+      ]
     },
     {
       "id": "05_black_camera",
