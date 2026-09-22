@@ -46,3 +46,16 @@
 /* Equal-height native frames: scene is 4:3, detail is square. */
 .robot-grid{grid-template-columns:minmax(0,4fr) minmax(0,3fr)}
 .robot-grid video{aspect-ratio:auto;height:auto}
+
+/* Four-stage teaser row, adapted from the video title slide. */
+.teaser-flow{display:grid;grid-template-columns:minmax(0,150fr) minmax(0,206fr) minmax(0,444fr) minmax(0,332fr);gap:12px;align-items:stretch;margin:0 0 30px;text-align:left}
+.teaser-flow-card{display:flex;flex-direction:column;min-width:0;min-height:290px;padding:12px;background:var(--soft);border:1px solid var(--line);border-radius:12px}
+.teaser-flow-card h2{margin:0 0 12px;color:var(--purple);font-size:15px;font-weight:700;line-height:1.35;letter-spacing:0;text-align:center}
+.teaser-flow-card--text p{display:flex;align-items:center;flex:1;margin:0;padding:0 4px;font-size:clamp(17px,1.7vw,22px);font-weight:650;line-height:1.4}
+.teaser-flow-card--image img{width:100%;aspect-ratio:1;object-fit:contain;margin:auto 0;border-radius:6px;background:white}
+.teaser-flow-card video{display:block;width:100%;object-fit:contain;margin:auto 0;border-radius:6px;background:white}
+.teaser-probes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;align-items:center;margin:auto 0}
+.teaser-probes video{aspect-ratio:1}
+.teaser-flow-card--robot video{aspect-ratio:4/3}
+@media(max-width:900px){.teaser-flow{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.teaser-flow{gap:8px;margin-bottom:22px}.teaser-flow-card{min-height:150px;padding:9px}.teaser-flow-card h2{font-size:13px}.teaser-flow-card--text p{font-size:17px}.teaser-flow-card--image img{max-width:150px;margin:auto}.teaser-flow-card--assets,.teaser-flow-card--robot{grid-column:1/-1}.teaser-flow-card--assets{min-height:220px}.teaser-flow-card--robot video{max-width:360px}.teaser-flow-card--robot{min-height:0}}
