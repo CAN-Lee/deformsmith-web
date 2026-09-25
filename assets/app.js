@@ -1,4 +1,22 @@
 'use strict';
+const autoplayButtons=new WeakMap();
+function playWithFallback(video){
+ let button=autoplayButtons.get(video);
+ if(!button){
+  button=document.createElement('button');button.type='button';button.className='button video-play-fallback';button.textContent='点击播放';button.hidden=true;
+  button.setAttribute('aria-label','点击播放：'+(video.getAttribute('aria-label')||'视频'));
+  const wrapper=document.createElement('div');wrapper.className='autoplay-video';video.before(wrapper);wrapper.append(video,button);autoplayButtons.set(video,button);
+  video.addEventListener('playing',()=>{button.hidden=true});
+  button.addEventListener('click',()=>{playWithFallback(video).catch(()=>{})});
+ }
+ // Keep native autoplay; expose a manual fallback only when policy blocks play().
+ return video.play().catch(error=>{
+  if(error.name==='NotAllowedError'&&video.isConnected&&video.paused)button.hidden=false;
+  throw error;
+ });
+}
+Promise.allSettled([...document.querySelectorAll('video[autoplay]')].map(playWithFallback));
+
 (async () => {
  const grid=document.querySelector('#comparison-grid'), tabs=document.querySelector('#case-tabs'), view=document.querySelector('#view-select'), mode=document.querySelector('#playback-mode'), play=document.querySelector('#play-all'), status=document.querySelector('#video-status');
  let data, selected=0, playing=false, generation=0;
@@ -36,7 +54,7 @@
    video.addEventListener('error',()=>{status.textContent='A robot video could not load. Please reload the page.'});card.append(title,video,caption);grid.append(card);
   });
   status.textContent=item.label+' · Original playback speed';
-  const current=token;Promise.allSettled(videos().map(v=>v.play())).then(results=>{if(current===token&&results.some(r=>r.status==='rejected'))status.textContent=item.label+' · Tap a video to play.'});
+  const current=token;Promise.allSettled(videos().map(playWithFallback)).then(results=>{if(current===token&&results.some(r=>r.status==='rejected'))status.textContent=item.label+' · Tap a video to play.'});
  }
  try{
   const response=await fetch('assets/robots.json', {cache:'no-cache'});if(!response.ok)throw Error('Robot media index unavailable');data=await response.json();tabs.replaceChildren();

@@ -47,6 +47,9 @@
 .robot-grid{grid-template-columns:minmax(0,4fr) minmax(0,3fr)}
 .robot-grid video{aspect-ratio:auto;height:auto}
 
+.autoplay-video{position:relative;width:100%;min-width:0;margin:auto 0}
+.video-play-fallback{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:1;box-shadow:0 2px 12px #0003}
+.video-play-fallback[hidden]{display:none}
 /* Four-stage teaser row, adapted from the video title slide. */
 .teaser-flow{display:grid;grid-template-columns:minmax(0,150fr) minmax(0,206fr) minmax(0,444fr) minmax(0,332fr);gap:32px;align-items:stretch;margin:0 0 30px;text-align:left}
 .teaser-flow-card{position:relative;display:flex;flex-direction:column;min-width:0;min-height:290px;padding:12px;background:var(--soft);border:1px solid var(--line);border-radius:12px}
